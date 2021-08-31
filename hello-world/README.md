@@ -1,4 +1,5 @@
 # hello-world
+vue create hello-world
 
 ## Project setup
 ```
