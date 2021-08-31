@@ -1,5 +1,6 @@
 import Vue from 'vue'
-import App from './App.vue'
+//import App from './App.vue'
+import App from './Test.vue'
 
 // お助けヘルプ。trueにした場合、デベロッパーツールで確認できる。
 Vue.config.productionTip = false
