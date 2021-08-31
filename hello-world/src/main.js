@@ -4,6 +4,9 @@ import App from './App.vue'
 // お助けヘルプ。trueにした場合、デベロッパーツールで確認できる。
 Vue.config.productionTip = false
 
+// インポートしているApp.vueの中身。
+console.log(App);
+
 new Vue({
   render: h => h(App),
   // render: function(h){ return h(App)} でもOK
