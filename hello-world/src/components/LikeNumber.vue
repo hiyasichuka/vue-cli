@@ -1,12 +1,13 @@
 <template>
-  <p>Like!({{ number }})</p>
+  <p>いいね ({{ number }})</p>
 </template>
+
 
 <script>
 export default {
   data() {
     return {
-      number: 10,
+      number: 2,
     };
   },
 };
