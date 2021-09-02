@@ -3,7 +3,7 @@
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <template>
-      <LikeHeader></LikeHeader>
+      <like-header></like-header>
       <LikeNumber></LikeNumber>
     </template>
   </div>
