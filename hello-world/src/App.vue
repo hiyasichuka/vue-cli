@@ -3,18 +3,22 @@
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <template>
+      <LikeHeader></LikeHeader>
       <LikeNumber></LikeNumber>
     </template>
   </div>
 </template>
 
 <script>
+// component ローカル登録
 import HelloWorld from "./components/HelloWorld.vue";
+import LikeHeader from "./components/LikeHeader.vue";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
+    LikeHeader,
   },
 };
 </script>
