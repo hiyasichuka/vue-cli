@@ -4,7 +4,9 @@
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <template>
       <like-header></like-header>
-      <LikeNumber></LikeNumber>
+      <h2>{{ number }}</h2>
+      <LikeNumber v-bind:number="number"></LikeNumber>
+      <LikeNumber :number="number"></LikeNumber>
     </template>
   </div>
 </template>
@@ -16,6 +18,11 @@ import LikeHeader from "./components/LikeHeader.vue";
 
 export default {
   name: "App",
+  data() {
+    return {
+      number: 16,
+    };
+  },
   components: {
     HelloWorld,
     LikeHeader,
