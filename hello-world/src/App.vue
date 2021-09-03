@@ -5,8 +5,8 @@
     <template>
       <like-header></like-header>
       <h2>{{ number }}</h2>
-      <LikeNumber v-bind:number="number"></LikeNumber>
-      <LikeNumber :number="number"></LikeNumber>
+      <LikeNumber v-bind:totalNumber="number"></LikeNumber>
+      <LikeNumber :total-number="number"></LikeNumber>
     </template>
   </div>
 </template>
