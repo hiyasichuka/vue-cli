@@ -8,13 +8,7 @@
 
 <script>
 export default {
-  props: {
-    totalNumber: {
-      type: Number,
-      //required: true,
-      default: 10,
-    },
-  },
+  props: ["totalNumber"],
   computed: {
     halfNumber() {
       return this.totalNumber / 2;
@@ -22,7 +16,7 @@ export default {
   },
   methods: {
     increment() {
-      this.number++;
+      this.$emit("my-click", this.totalNumber + 1);
     },
   },
 };
