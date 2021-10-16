@@ -1,6 +1,11 @@
 <template>
   <div>
-    <LikeHeader header-text="hello"> </LikeHeader>
+    <LikeHeader header-text="hello">
+      <template v-slot:title>
+        <h2>こんにちは</h2>
+      </template>
+      <p>{{ number }}</p>
+    </LikeHeader>
     <LikeNumber :total-number="number" @my-click="number = $event"></LikeNumber>
     <LikeNumber :total-number="number" @my-click="incNum"></LikeNumber>
     <LikeNumber :total-number="number"></LikeNumber>

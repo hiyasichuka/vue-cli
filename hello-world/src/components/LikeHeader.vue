@@ -1,8 +1,9 @@
 <template>
   <div>
-    <slot>
-      <h2>default title</h2>
-    </slot>
+    <slot name="title"> </slot>
+    <hr />
+    <p>good number</p>
+    <slot></slot>
   </div>
 </template>
 
