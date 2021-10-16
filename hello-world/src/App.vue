@@ -1,10 +1,15 @@
 <template>
   <div>
     <LikeHeader header-text="hello">
+      <h2>Hi ,every one.</h2>
       <template v-slot:title>
         <h2>こんにちは</h2>
       </template>
-      <p>{{ number }}</p>
+      <h3>default slot</h3>
+      <p>nice to meet you</p>
+      <template v-slot:numb>
+        <p>{{ number }}</p>
+      </template>
     </LikeHeader>
     <LikeNumber :total-number="number" @my-click="number = $event"></LikeNumber>
     <LikeNumber :total-number="number" @my-click="incNum"></LikeNumber>

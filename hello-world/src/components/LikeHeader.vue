@@ -1,9 +1,10 @@
 <template>
   <div>
     <slot name="title"> </slot>
+    <slot></slot>
     <hr />
     <p>good number</p>
-    <slot></slot>
+    <slot name="numb"></slot>
   </div>
 </template>
 
