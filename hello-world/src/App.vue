@@ -1,6 +1,6 @@
 <template>
   <div>
-    <LikeHeader headerText="">
+    <LikeHeader header-text="hello">
       <h1>Totalのいいね数</h1>
       <h2>{{ number }}</h2>
     </LikeHeader>
@@ -28,3 +28,14 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+div {
+  border: 1px solid blue;
+}
+h1 {
+  color: red;
+}
+</style>
+
+
