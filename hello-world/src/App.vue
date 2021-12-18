@@ -4,7 +4,7 @@
       <h2>Hi ,every one.</h2>
       <template v-slot:title="slotProps">
         <h2>こんにちは</h2>
-        <h2>{{ slotProps.user.firstName }}</h2>
+        <h2>{{ slotProps }}</h2>
       </template>
       <h3>default slot</h3>
       <p>nice to meet you</p>
